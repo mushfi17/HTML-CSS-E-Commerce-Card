@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #6D214F;
+}
+.cardone {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #F8EFBA;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0,0,0,0.15), 0 20px 20px rgba(0,0,0,0.15);
+}
+.cardone:hover {
+    transform: perspective(2000px) translateX(50%);
+    box-shadow: inset 20px 0 50px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.15);
+}
+.cardone .cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #F8EFBA;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    transform-origin: left;
+}
+.cardone:hover .cover {
+    transform: rotateY(-180deg);
+}
+.cardone .cover img {
+    max-width: 100%;
+    z-index: 2;
+}
+.cardone .cover::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 150%;
+    background: #fff;
+    transform: rotate(46.5deg);
+    box-shadow: 0 0 0 20px #ED4C67;
+    transition: 0.5s;
+    z-index: 2;
+}
+.cardone:hover .cover::before {
+    width: 0;
+    box-shadow: 0 0 0 250px #ED4C67;
+    transform: rotate(143deg);
+    transition-delay: 1s;
+}
+.cardone .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+}
+.cardone .details h3 {
+    font-size: 2em;
+    font-weight: 500;
+    margin: 5px 0;
+}
+.cardone .details h2 {
+    font-size: 1.5em;
+    color: #182C61;
+    font-weight: 600;
+}
+.cardone .details h2 sup {
+    color: #747d8c;
+    font-weight: lighter;
+}
+.cardone .details a {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #006266;
+    color: aliceblue;
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+    border-radius: 8px;
+}
+/*----*/
+
+.cardtwo {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-left: 250px;
+    background: #F8EFBA;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0,0,0,0.15), 0 20px 20px rgba(0,0,0,0.15);
+}
+.cardtwo:hover {
+    transform: perspective(2000px) translateX(50%);
+    box-shadow: inset 20px 0 50px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.15);
+}
+.cardtwo .cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #F8EFBA;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    transform-origin: left;
+}
+.cardtwo:hover .cover {
+    transform: rotateY(-180deg);
+}
+.cardtwo .cover img {
+    max-width: 100%;
+    z-index: 2;
+}
+.cardtwo .cover::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 150%;
+    background: #fff;
+    transform: rotate(46.5deg);
+    box-shadow: 0 0 0 20px #247198;
+    transition: 0.5s;
+    z-index: 2;
+}
+.cardtwo:hover .cover::before {
+    width: 0;
+    box-shadow: 0 0 0 250px #247198;
+    transform: rotate(143deg);
+    transition-delay: 1s;
+}
+.cardtwo .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+}
+.cardtwo .details h3 {
+    font-size: 2em;
+    font-weight: 500;
+    margin: 5px 0;
+}
+.cardtwo .details h2 {
+    font-size: 1.5em;
+    color: #182C61;
+    font-weight: 600;
+}
+.cardtwo .details h2 sup {
+    color: #747d8c;
+    font-weight: lighter;
+}
+.cardtwo .details a {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #006266;
+    color: aliceblue;
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+    border-radius: 8px;
+}
